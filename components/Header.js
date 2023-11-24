@@ -11,8 +11,7 @@ const StyledLink = styled(Link)`
   color: #fff;
 `;
 
-export default function Header() {
-  const countSum = "???";
+export default function Header({ countSum }) {
   return (
     <Title>
       <StyledLink href="/">
@@ -20,7 +19,7 @@ export default function Header() {
         <span role="img" aria-label="trademark">
           ™
         </span>{" "}
-        — currently counting <strong>{countSum}</strong> things.
+        — currently counting <strong>{countSum}</strong> animals.
       </StyledLink>
     </Title>
   );
